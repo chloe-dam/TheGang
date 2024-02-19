@@ -1,0 +1,363 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+button {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.divider {
+    display: flex;
+    background-color: black;
+}
+
+.container { 
+    width: 1100px;
+    max-width: 100%;
+    padding: 100px 16px;
+    margin: 0 auto;
+}
+
+.close {
+    position: absolute;
+    right: -25px;
+    top: -25px;
+    /* padding: 24px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid red; */
+    border-radius: 100px;
+    width: 50px;
+    height: 50px;
+    /* margin-top: -30px;
+    margin-left: 775px; */
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    text-decoration: none;
+    color: white;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    text-decoration: none;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.btn.blue {
+    background-color: rgb(43, 105, 250);
+    color: white;
+}
+
+.btn.blue:hover {
+    background-color: rgb(2, 2, 191);
+}
+
+.btn.purple {
+    background-color: rgb(128, 0, 128);
+    color: white;
+    width: 30%;
+}
+
+.btn.purple:hover {
+    background-color: rgb(194, 4, 194);
+}
+
+label {
+    font-weight: bold;
+    font-size: 14px;
+    color: black;
+}
+
+input {
+    border: 1px solid black;
+    padding: 10px;
+    font-size: 15px;
+    font-family: sans-serif;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+input::placeholder {
+    color: darkgrey;
+}
+
+
+
+
+
+
+
+
+.hero-banner {
+    background-color: rgb(43, 105, 250); 
+    min-height: 537px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-banner .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    gap: 32px;
+}
+
+.hero-banner h1{
+    color: white;
+    font-family: sans-serif;
+    font-size: 72px;
+    max-width: 380px;
+    padding: 20px 0 px;
+    line-height: 80px;
+}
+
+.hero-banner .container img {
+    width: 500px;
+}
+
+.navigation {
+    position: -webkit-sticky;
+    top: 0;
+    border-bottom: 5px solid rgba(161, 161, 161, 0.7);
+    background-color: white;
+}
+
+.navigation .container {
+    padding: 16px;
+    width: 100%;
+}
+
+.navigation .row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+    gap: 32px;
+}
+
+.navigation .list {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+}
+
+.navigation .list .signIn {
+    font-family: sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 17px;
+    color: rgb(0, 0, 0);
+}
+
+.navigation .list .signIn:hover {
+    color: rgb(30, 180, 30);
+}
+
+.navigation .list li a:hover { 
+    color: rgb(30, 180, 30);
+}
+
+.navigation .list .currentPage li a {
+    color: rgb(30, 180, 30);
+}
+
+.navigation .list li a {
+    color: black;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.extraInfo {
+    background-color: rgb(211, 210, 210);
+}
+
+.extraInfo .container {
+    /* display: flex;
+    flex-direction: column;
+    align-items: flex-start; */
+    padding-bottom: 0px;
+}
+
+.extraInfo .extraInfo-text {
+    width: 550px;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin: 0 auto;
+    padding-bottom: 100px;
+} 
+
+.extraInfo .extraInfo-text h3 {
+    text-align: center;
+    font-family: sans-serif;
+}
+
+.extraInfo .extraInfo-text p {
+    font-family: sans-serif;
+    text-align: center;
+}
+
+.extraInfo .extraInfo-images ul {
+    display: flex;
+    justify-content: space-around;
+    padding: 100px;
+    gap: 32px;
+}
+
+.extraInfo .extraInfo-images .extraInfo-img1 {
+    height: 350px;
+    /* background-color: red; */
+}
+
+.extraInfo .extraInfo-images .extraInfo-img2 {
+    height: 350px;
+    /* background-color: green; */
+}
+
+.extraInfo .extraInfo-images .extraInfo-img3 {
+    height: 350px;
+    /* background-color: yellow; */
+}
+
+.extraInfo .seperator {
+    display: flex;
+    justify-content: center;  
+}
+
+.divider.line {
+    width: 300px;
+    height: 4px;
+    /* margin: 100px 100px 0px 100px; */
+}
+
+.join {
+    background-color: rgb(211, 210, 210);
+}
+
+.join .container {
+    width: 550px;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+
+.join h1 {
+    font-family: sans-serif;
+}
+
+.join p {
+    font-family: sans-serif;
+    text-align: center;
+}
+
+
+.footer {
+    position: -webkit-sticky;
+    bottom: 0;
+    padding: 16px;
+    font-family: sans-serif;
+    font-size: 14.5px;
+    border-top: 5px solid rgba(161, 161, 161, 0.7);
+    background-color: white;
+}
+
+.footer a {
+    color: black;
+}
+
+.popup {
+    position: fixed;
+    inset: 0;
+    z-index: 100;
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0,0,0,.5);
+    visibility: hidden;
+}
+
+.popup.active {
+    visibility: visible;
+}
+
+/* .close-popup {
+    visibility: hidden;
+} */
+
+.popup-content {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    /* height: 400px; */
+    background-color: #fff;
+    border-radius: 15px;
+    font-family: sans-serif;
+}
+
+.popup-header {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid black;
+    padding: 15px 30px;
+}
+
+.popup-header .close {
+    background-color: red;
+}
+
+.popup-header .close:hover {
+    background-color: rgb(116, 14, 14);
+}
+
+/*.popup-header h2 {
+    font-family: sans-serif;
+    text-align: center;
+}
+*/
+.popup-item {
+    padding: 30px;
+}
+
+.popup-item .btn {
+    margin: 30px auto 0 auto;
+}
+
+.list-popup {
+    /* display: flex; */
+    /* flex-direction: row; */
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    gap: 24px;
+}
+
+.list-popup-item {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    /* background-color: red; */
+}

@@ -1,0 +1,148 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.container {
+    width: 1100px;
+    max-width: 100%;
+    padding: 100px 16px;
+    margin: 0 auto;
+}
+
+input {
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 15px;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+input::placeholder {
+    color: darkgrey;
+}
+
+label {
+    font-size: 14px;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+button {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    text-decoration: none;
+    padding: 15px;
+    cursor: pointer;
+}
+
+.close {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: -25px;
+    right: -25px;
+    width: 50px;
+    height: 50px;
+    border-radius: 100px;
+    color: white;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.btn.purple {
+    background-color: rgb(128, 0, 128);
+    color: white;
+    width: 30%;
+}
+
+.btn.purple:hover {
+    background-color: rgb(194, 4, 194);
+}
+
+
+
+
+
+
+body {
+    background-image: url(img/the-gang.png);
+    background-repeat: no-repeat;
+    background-size: 92%;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.popup {
+    position: fixed;
+    z-index: 100;
+    inset: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.popup-content {
+    display: flex;
+    flex-direction: column;
+    width: 800px;
+    border-radius: 15px;
+    font-family: sans-serif;
+    background-color: white
+}
+
+.popup-header {
+    position: relative;
+    padding: 15px 30px;
+    border-bottom: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-header .close {
+    background-color: red;
+}
+
+.popup-header .close:hover {
+    background-color: rgb(116, 14, 14);
+}
+
+.popup-item {
+    padding: 30px;
+}
+
+.list-popup {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+
+.list-popup-item {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.popup-item .btn {
+    margin: 30px auto 0 auto;
+}

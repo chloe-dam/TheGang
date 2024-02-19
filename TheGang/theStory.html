@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Story</title>
+    <link rel="stylesheet" href="theStory.css">
+</head>
+<body>
+    
+<section class="hero-banner">
+
+    <div class="container">
+
+        <div class="hero-banner-text">
+
+            <h1>We Are The Gang!</h1>
+
+        </div>
+
+        <div class="hero-banner-img">
+
+            <img src="img/the-gang.png">
+
+        </div>
+
+    </div>
+
+</section>
+
+<section class="navigation">
+
+    <div class="container">
+
+        <div class="row">
+
+            <div class="logo">
+
+            <a href="index.html"><img src="img/logo-the-gang.png"></a>
+
+            </div>
+
+            <ul class="list">
+
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="extraInfo.html" target="_blank">EXTRA INFO</a></li>
+
+                    <div class="current-page">
+
+                        <li><a href="index.html">THE STORY</a></li>
+
+                    </div>
+
+                    <li><button type="submit" class="signIn" onclick="openPopup()">SIGN IN</button></li>
+
+                <li><a href="signUp.html" target="_blank">SIGN UP</a></li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section class="the-story">
+
+    <div class="container">
+
+        <div class="the-story-text">
+
+            <h3>The Story</h3>
+
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum, blanditiis veniam, repudiandae sunt aliquid architecto maiores sint minima incidunt rerum consectetur nesciunt! Quod, impedit! Quas molestias in veritatis! Commodi dolore quos sit voluptatum! Eligendi possimus, numquam quia debitis alias beatae assumenda magnam autem voluptatem voluptate dolores soluta, deserunt ipsa veritatis obcaecati. Temporibus autem hic perspiciatis porro omnis maiores, non amet provident, mollitia consectetur necessitatibus placeat? Veniam, quam error veritatis voluptatum autem aliquid ea quo! Ab sint alias laboriosam libero labore perspiciatis rerum at aspernatur neque consequuntur reprehenderit, eaque iste odio, ut voluptas accusamus rem magni aliquam nesciunt est esse excepturi.</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum, blanditiis veniam, repudiandae sunt aliquid architecto maiores sint minima incidunt rerum consectetur nesciunt! Quod, impedit! Quas molestias in veritatis! Commodi dolore quos sit voluptatum! Eligendi possimus, numquam quia debitis alias beatae assumenda magnam autem voluptatem voluptate dolores soluta, deserunt ipsa veritatis obcaecati. Temporibus autem hic perspiciatis porro omnis maiores, non amet provident, mollitia consectetur necessitatibus placeat? Veniam, quam error veritatis voluptatum autem aliquid ea quo! Ab sint alias laboriosam libero labore perspiciatis rerum at aspernatur neque consequuntur reprehenderit, eaque iste odio, ut voluptas accusamus rem magni aliquam nesciunt est esse excepturi.</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum, blanditiis veniam, repudiandae sunt aliquid architecto maiores sint minima incidunt rerum consectetur nesciunt! Quod, impedit! Quas molestias in veritatis! Commodi dolore quos sit voluptatum! Eligendi possimus, numquam quia debitis alias beatae assumenda magnam autem voluptatem voluptate dolores soluta, deserunt ipsa veritatis obcaecati. Temporibus autem hic perspiciatis porro omnis maiores, non amet provident, mollitia consectetur necessitatibus placeat? Veniam, quam error veritatis voluptatum autem aliquid ea quo! Ab sint alias laboriosam libero labore perspiciatis rerum at aspernatur neque consequuntur reprehenderit, eaque iste odio, ut voluptas accusamus rem magni aliquam nesciunt est esse excepturi.</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum, blanditiis veniam, repudiandae sunt aliquid architecto maiores sint minima incidunt rerum consectetur nesciunt! Quod, impedit! Quas molestias in veritatis! Commodi dolore quos sit voluptatum! Eligendi possimus, numquam quia debitis alias beatae assumenda magnam autem voluptatem voluptate dolores soluta, deserunt ipsa veritatis obcaecati. Temporibus autem hic perspiciatis porro omnis maiores, non amet provident, mollitia consectetur necessitatibus placeat? Veniam, quam error veritatis voluptatum autem aliquid ea quo! Ab sint alias laboriosam libero labore perspiciatis rerum at aspernatur neque consequuntur reprehenderit, eaque iste odio, ut voluptas accusamus rem magni aliquam nesciunt est esse excepturi.</p>
+
+        </div>
+
+        <div class="seperator">
+
+            <div class="divider line"></div>
+
+        </div>
+
+        <div class="the-story-img">
+
+            <ul>
+    
+                <li> <img class="the-story-img1" src="img/sticky-guy-2.png" ></li>
+
+                <li> <img class="the-story-img2" src="img/bye-guy.png" ></li>
+
+                <li> <img class="the-story-img3" src="img/hat-guy.png" ></li>
+
+            </ul>
+
+        </div>
+
+        <div class="seperator">
+
+            <div class="divider line"></div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section class="join">
+
+    <div class="container">
+
+        <h1>Join Our Fanclub!</h1>
+
+        <p>Every week we have a party. If you want to join us then join our fan club. Members will also recieve pictures of us in all kinds of shapes and sizes. Cool huh?</p>
+
+        <a href="signUp.html" class="btn blue">Sign Me Up!</a>
+
+    </div>
+
+</section>
+
+<section class="footer">
+
+    <h4>Made by Rich from <a href="https://www.taptapkaboom.com">Tap Tap Kaboom</a></h4>
+
+</section>
+
+<div class="popup" id="popup" onclick="closePopup()"> 
+
+    <div class="popup-content" onclick="noClose(event)">
+
+        <div class="popup-header">
+
+            <h2>Fill In Your Details</h2>
+            
+            <button type="button" class="close" onclick="closePopup()">X</button>
+
+        </div>
+
+        <div class="popup-item">
+                
+            <ul class="list-popup">
+
+                <div class="list-popup-item">
+
+                    <label for="email">Your Email:</label>
+
+                    <input type="email" id="femail" placeholder="someone@example.com" name="femail">
+
+                </div>
+
+                <div class="list-popup-item">
+
+                    <label for="password">Your Password:</label>
+
+                    <input type="password" id="password" placeholder="********" name="password">
+
+                </div>
+
+                <!-- <div class="list-popup-item">
+
+                    <label for="fcolor">Your Favorite Color:</label>
+
+                    <input type="text" id="fcolor" placeholder="Pink" name="fcolor">
+
+                </div>
+
+                <div class="list-popup-item">
+
+                    <label for="ffood">Your Favorite Food:</label>
+
+                    <input type="text" id="ffood" placeholder="Apple Pie" name="ffood">
+
+                </div> -->
+
+            </ul>
+
+            <a href="#" class="btn purple">Sign In!</a>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script>
+
+let popup = document.getElementById("popup");
+
+function openPopup() {
+    popup.classList.add("active");
+}
+
+function closePopup() {
+    popup.classList.remove("active");
+}
+
+function noClose(event){
+    event.stopPropagation("popup-content");
+}
+
+</script>
+
+</body>
+</html>
